@@ -1,0 +1,47 @@
+name: Bug report
+description: Report an incorrect catalog finding, crash, or CLI problem.
+title: "bug: "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: xcstrings-doctor version
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: macOS, Xcode, and Node.js versions.
+      placeholder: macOS 27, Xcode 18, Node 22.12.0
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal String Catalog example
+      description: Paste the smallest sanitized .xcstrings content or link to a minimal repository.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command used
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true

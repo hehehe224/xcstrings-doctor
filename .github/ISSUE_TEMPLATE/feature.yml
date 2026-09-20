@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose a new String Catalog check or workflow improvement.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Localization workflow problem
+      description: Explain the failure that currently reaches review, CI, or users.
+    validations:
+      required: true
+  - type: textarea
+    id: catalog-shape
+    attributes:
+      label: Relevant catalog shape
+      description: Include a minimal sanitized example when the request involves catalog structure.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

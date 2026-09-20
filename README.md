@@ -88,6 +88,26 @@ The package also exports `auditCatalog`, `formatHuman`, and `formatGitHub`.
 
 The doctor checks catalog structure and translation state; it does not judge linguistic quality, call a translation service, edit files, or replace Xcode's localization workflow. Plural categories legitimately differ between languages, so placeholder checks compare each target variation with the closest source variation and fall back to the source `other` form.
 
+## Common questions
+
+### How do I fail CI for incomplete Xcode String Catalog localization?
+
+Run `xcstrings-doctor` in CI with every required locale and the completion threshold you enforce:
+
+```bash
+npx --yes github:hehehe224/xcstrings-doctor . --locale fr-CA --fail-under 100 --github
+```
+
+The command exits `1` for catalog errors or completion below the threshold and emits GitHub Actions annotations with `--github`.
+
+### What does this add beyond Xcode's localization interface?
+
+Xcode is where teams author and inspect String Catalogs. `xcstrings-doctor` adds a repeatable, read-only CI check across catalogs, explicit required locales, stable machine-readable output, and placeholder validation inside plural, device, and substitution variations.
+
+### What is the difference between a missing locale and placeholder drift?
+
+A missing locale means a translation is absent or unfinished for a required language. Placeholder drift means a translation changed or omitted format tokens such as `%@`, `%lld`, positional arguments, or catalog substitutions, which can produce incorrect output or runtime failures even when text appears translated.
+
 Requires Node.js 20 or newer.
 
 ## Development
@@ -104,3 +124,5 @@ The test suite includes real-shape String Catalog fixtures and CLI exit-code cov
 ## License and identity
 
 Code is licensed under [AGPL-3.0-only](LICENSE). See [SECURITY.md](SECURITY.md) for private vulnerability reporting and [TRADEMARKS.md](TRADEMARKS.md) for the separately reserved project name and artwork.
+
+Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).

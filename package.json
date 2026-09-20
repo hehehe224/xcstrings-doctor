@@ -1,7 +1,7 @@
 {
   "name": "xcstrings-doctor",
   "version": "0.1.0",
-  "description": "Audit Xcode String Catalogs for missing locales, placeholder drift, variations, and stale entries.",
+  "description": "Lint Xcode .xcstrings in CI for missing locales, unfinished translations, and placeholder drift.",
   "type": "module",
   "bin": { "xcstrings-doctor": "./bin/xcstrings-doctor.js" },
   "exports": "./src/audit.js",
@@ -12,7 +12,7 @@
     "prepack": "npm run check && npm test"
   },
   "engines": { "node": ">=20" },
-  "keywords": ["xcstrings", "xcode", "localization", "ios", "swift", "linter", "i18n"],
+  "keywords": ["xcstrings", "string-catalog", "xcode", "localization", "localization-testing", "ios", "swift", "linter", "i18n", "github-actions"],
   "author": "Lena",
   "license": "AGPL-3.0-only",
   "repository": { "type": "git", "url": "git+https://github.com/hehehe224/xcstrings-doctor.git" },
