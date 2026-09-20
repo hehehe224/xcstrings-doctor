@@ -1,0 +1,23 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">xcstrings-doctor</title>
+  <desc id="desc">A dark localization audit cover with healthy English and French rows and one missing German translation.</desc>
+  <rect width="1200" height="360" fill="#090A10"/>
+  <circle cx="1046" cy="80" r="220" fill="#F05DAB" opacity=".08"/>
+  <path d="M64 72H118" stroke="#F05DAB" stroke-width="5"/>
+  <text x="64" y="148" fill="#F6EAF1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="54" font-weight="700" letter-spacing="-2">xcstrings-doctor</text>
+  <text x="67" y="194" fill="#BAA7B1" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="2">LOCALIZATION FAILURES, CAUGHT BEFORE RELEASE.</text>
+  <path d="M67 252H615" stroke="#30252E" stroke-width="2"/>
+  <text x="67" y="287" fill="#8F7B86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16">READ ONLY  /  OFFLINE  /  ZERO DEPENDENCIES</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18">
+    <text x="760" y="103" fill="#F6EAF1">en</text>
+    <text x="760" y="180" fill="#F6EAF1">fr</text>
+    <text x="760" y="257" fill="#F6EAF1">de</text>
+  </g>
+  <g fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M836 94l11 11 24-27" stroke="#D7C9D0"/>
+    <path d="M836 171l11 11 24-27" stroke="#D7C9D0"/>
+    <path d="M838 239l28 28M866 239l-28 28" stroke="#F05DAB"/>
+  </g>
+  <path d="M921 95H1129M921 172H1094" stroke="#4B3A45" stroke-width="8" stroke-linecap="round"/>
+  <path d="M921 249H1024" stroke="#7D3157" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 14"/>
+</svg>

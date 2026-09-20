@@ -1,0 +1,44 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "files.count": {
+      "localizations": {
+        "en": {
+          "substitutions": {
+            "count": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": { "stringUnit": { "state": "translated", "value": "%lld file" } },
+                  "other": { "stringUnit": { "state": "translated", "value": "%lld files" } }
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "substitutions": {
+            "count": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": { "stringUnit": { "state": "translated", "value": "%lld fichier" } },
+                  "other": { "stringUnit": { "state": "translated", "value": "%lld fichiers" } }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "welcome.title": {
+      "localizations": {
+        "en": { "stringUnit": { "state": "translated", "value": "Welcome, %@" } },
+        "fr": { "stringUnit": { "state": "translated", "value": "Bienvenue, %@" } }
+      }
+    }
+  }
+}
